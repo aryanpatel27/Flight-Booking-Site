@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Getaway Flight Booking Site</title>
+  </head>
+  <body>
+    <section>
+      <form>
+        <fieldset class="radio-set">
+          <input type="radio" name="direction" id="one way" value="one" />
+          <label for="one way"><strong>One way</strong></label>
+
+          <input type="radio" name="direction" id="round trip" value="round" />
+          <label for="round trip"><strong>Round trip</strong></label>
+
+          <input type="radio" name="direction" id="multi-city" value="multi" />
+          <label for="multi-city"><strong>Multi city</strong></label>
+        </fieldset>
+
+        <fieldset>
+          <div class="field">
+            <label for="from"><strong>From </strong></label>
+            <input
+              type="text"
+              name="source"
+              placeholder="Any worldwide city or airport"
+              class="from"
+            />
+          </div>
+          <div class="middle">
+            <span>&rlhar;</span>
+          </div>
+          <div class="field">
+            <label for="to"><strong>To </strong></label>
+            <input
+              type="text"
+              name="destination"
+              placeholder="Any worldwide city or airport"
+              class="two"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="field">
+            <label for="depart"><strong>Depart on</strong></label>
+            <input
+              type="date"
+              name="depart on"
+              id="depart"
+              placeholder="Pick a date"
+            />
+          </div>
+          <div class="dir">
+            <span>&rlhar;</span>
+          </div>
+          <div class="field">
+            <label for="return"><strong>Return on</strong></label>
+            <input
+              type="date"
+              name="return on"
+              id="return"
+              placeholder="Pick a date"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="select-field">
+            <label for="adults"><strong>Adults</strong></label>
+            <select name="adult people" id="adults">
+              <option value="1" selected="selected">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="More than 5">More than 5</option>
+            </select>
+            <label id="hint">&nbsp;</label>
+          </div>
+          <div class="select-field">
+            <label for="children"><strong>Children</strong></label>
+            <select name="child section" id="children">
+              <option value="0" selected="selected">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="More than 5">More than 5</option>
+            </select>
+            <label id="hint">2-11 years</label>
+          </div>
+
+          <div class="select-field">
+            <label for="infants"><strong>Infants</strong></label>
+            <select name="infant people" id="infants">
+              <option value="0" selected="selected">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="more than 4">More than 4</option>
+            </select>
+            <label id="hint">Below 2 years</label>
+          </div>
+        </fieldset>
+        <fieldset class="mode">
+          <details>
+            <summary>More options: Class of travel, Airline Preference</summary>
+
+            <div class="field">
+              <label for="class of travel">Class-oftravel</label>
+              <select name="class service" class="class-of-travel">
+                <option value="Economy" selected="selected">Economy</option>
+                <option value="Business">Business</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="preferred airline">Preferred airline</label>
+              <input
+                type="text"
+                name="airline"
+                placeholder="Airline name"
+                class="airline"
+              />
+            </div>
+          </details>
+        </fieldset>
+
+        <div>
+          <input type="submit" value="Search Flights" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
