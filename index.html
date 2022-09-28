@@ -1,142 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
+<body class="page">
+  <div class="header">
+    Upcoming Flights
 
-    <title>Getaway Flight Booking Site</title>
-  </head>
-  <body>
-    <section>
-      <form>
-        <fieldset class="radio-set">
-          <input type="radio" name="direction" id="one way" value="one" />
-          <label for="one way"><strong>One way</strong></label>
+    <div class="toggle">
+      <div class="sun">&#9728;</div>
+      <div class="moon">&#9790;</div>
+    </div>
+  </div>
 
-          <input type="radio" name="direction" id="round trip" value="round" />
-          <label for="round trip"><strong>Round trip</strong></label>
+  <div class="flight flight-active">
+    <!--   <div class="flight-heading">
+      QF 411 - VHXZB
+    </div> -->
 
-          <input type="radio" name="direction" id="multi-city" value="multi" />
-          <label for="multi-city"><strong>Multi city</strong></label>
-        </fieldset>
+    <div class="flight-desc">
+      <div class="label label-green">Airborne</div>
+      QF 411 - VHXZB - Arrives in 35 minutes
+    </div>
 
-        <fieldset>
-          <div class="field">
-            <label for="from"><strong>From </strong></label>
-            <input
-              type="text"
-              name="source"
-              placeholder="Any worldwide city or airport"
-              class="from"
-            />
-          </div>
-          <div class="middle">
-            <span>&rlhar;</span>
-          </div>
-          <div class="field">
-            <label for="to"><strong>To </strong></label>
-            <input
-              type="text"
-              name="destination"
-              placeholder="Any worldwide city or airport"
-              class="two"
-            />
-          </div>
-        </fieldset>
+    <div class="flight-cities">
+      <div class="flight-city">Sydney</div>
+      <div class="flight-progress">
+        <div class="flight-progress-track">&#9992;</div>
+      </div>
+      <div class="flight-city">Melbourne</div>
+    </div>
 
-        <fieldset>
-          <div class="field">
-            <label for="depart"><strong>Depart on</strong></label>
-            <input
-              type="date"
-              name="depart on"
-              id="depart"
-              placeholder="Pick a date"
-            />
-          </div>
-          <div class="dir">
-            <span>&rlhar;</span>
-          </div>
-          <div class="field">
-            <label for="return"><strong>Return on</strong></label>
-            <input
-              type="date"
-              name="return on"
-              id="return"
-              placeholder="Pick a date"
-            />
-          </div>
-        </fieldset>
+    <div class="flight-leg flight-from">
+      <table class="flight-details">
+        <thead>
+          <tr>
+            <td>Offblocks</td>
+            <td>Airborne</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>11:41 am</td>
+            <td>12:10 pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-        <fieldset>
-          <div class="select-field">
-            <label for="adults"><strong>Adults</strong></label>
-            <select name="adult people" id="adults">
-              <option value="1" selected="selected">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="More than 5">More than 5</option>
-            </select>
-            <label id="hint">&nbsp;</label>
-          </div>
-          <div class="select-field">
-            <label for="children"><strong>Children</strong></label>
-            <select name="child section" id="children">
-              <option value="0" selected="selected">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="More than 5">More than 5</option>
-            </select>
-            <label id="hint">2-11 years</label>
-          </div>
+    <div class="flight-leg flight-to">
+      <table class="flight-details">
+        <thead>
+          <tr>
+            <td>Touchdown</td>
+            <td>OnBlocks</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="flight-details-estimated">3:19 pm</td>
+            <td class="flight-details-estimated">3:40 pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-          <div class="select-field">
-            <label for="infants"><strong>Infants</strong></label>
-            <select name="infant people" id="infants">
-              <option value="0" selected="selected">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="more than 4">More than 4</option>
-            </select>
-            <label id="hint">Below 2 years</label>
-          </div>
-        </fieldset>
-        <fieldset class="mode">
-          <details>
-            <summary>More options: Class of travel, Airline Preference</summary>
+  </div>
 
-            <div class="field">
-              <label for="class of travel">Class-oftravel</label>
-              <select name="class service" class="class-of-travel">
-                <option value="Economy" selected="selected">Economy</option>
-                <option value="Business">Business</option>
-              </select>
-            </div>
+  <div class="flight">
+    <div class="flight-heading">
+      QF 411 - VHXZB
+    </div>
 
-            <div class="field">
-              <label for="preferred airline">Preferred airline</label>
-              <input
-                type="text"
-                name="airline"
-                placeholder="Airline name"
-                class="airline"
-              />
-            </div>
-          </details>
-        </fieldset>
+    <div class="flight-desc">
+      <div class="label label-yellow">Taxiing</div> Airborne in 13 minutes
+    </div>
 
-        <div>
-          <input type="submit" value="Search Flights" />
-        </div>
-      </form>
-    </section>
-  </body>
-</html>
+    <div class="flight-cities">
+      <div class="flight-city">Melbourne</div>
+      <div class="flight-progress">
+        <div class="flight-progress-track"></div>
+      </div>
+      <div class="flight-city">Brisbane</div>
+    </div>
+
+    <div class="flight-leg flight-from">
+      <table class="flight-details">
+        <thead>
+          <tr>
+            <td>Offblocks</td>
+            <td>Airborne</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>11:41 am</td>
+            <td>12:10 pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="flight-leg flight-to">
+      <table class="flight-details">
+        <thead>
+          <tr>
+            <td>Touchdown</td>
+            <td>OnBlocks</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>11:41 am</td>
+            <td>12:10 pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="flight">
+    <div class="flight-heading">
+      QF 411 - VHXZB
+    </div>
+
+    <div class="flight-cities">
+      <div class="flight-city">Brisbane</div>
+      <div class="flight-progress">
+        <div class="flight-progress-track"></div>
+      </div>
+      <div class="flight-city">Sydney</div>
+    </div>
+
+    <div class="flight-leg flight-from">
+      <table class="flight-details">
+        <thead>
+          <tr>
+            <td>Offblocks</td>
+            <td>Airborne</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>11:41 am</td>
+            <td>12:10 pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="flight-leg flight-to">
+      <table class="flight-details">
+        <thead>
+          <tr>
+            <td>Touchdown</td>
+            <td>OnBlocks</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>11:41 am</td>
+            <td>12:10 pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
